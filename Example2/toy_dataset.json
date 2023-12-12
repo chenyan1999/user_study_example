@@ -1,0 +1,22 @@
+[
+    {
+        "change": "A",
+        "file_name": "scrapy/spidermiddlewares/referer.py",
+        "commit_url": "https://github.com/scrapy/scrapy/commit/5dd7311cd48e676147138746229d7ab2b429b8a9"
+    },
+    {
+        "change": "B",
+        "file_name": "scrapy/utils/url.py",
+        "commit_url": "https://github.com/scrapy/scrapy/commit/5dd7311cd48e676147138746229d7ab2b429b8a9"
+    },
+    {
+        "change": "C",
+        "file_name": "scrapy/utils/url.py",
+        "commit_url": "https://github.com/scrapy/scrapy/commit/285d5bc03a7ebe8eaa558a5c24ff0693353c3e87"
+    },
+    {
+        "change": "D",
+        "file_name": "tests/test_spidermiddleware_referer.py",
+        "commit_url": "https://github.com/not_scracy/scrapy/commit/285d5bc03a7ebe8eaa558a5c24ff0693353c3e87"
+    }
+]
