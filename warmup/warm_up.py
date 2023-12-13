@@ -18,6 +18,7 @@ class LinkedList:
         else:
             item = self.head.item
             self.head = self.head.next
+            self.size -= 1
             return item
 
     def is_empty(self):
