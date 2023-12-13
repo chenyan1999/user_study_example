@@ -10,6 +10,7 @@ class LinkedList:
         
     def add(self, item):
         self.head = Node(item, self.head)
+        self.size += 1
 
     def remove(self):
         if self.is_empty():
