@@ -10,3 +10,6 @@ def classify(dataset, idx):
             dic[commit_id] += 1
     ave = np.mean(list(dic.values()))
     return ave
+
+def classify_commit(dataset):
+    return classify(dataset, -1)
