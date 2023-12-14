@@ -4,6 +4,7 @@ class MultiClassClassifier:
     def __init__(self, num_classes, scale):
         self.num_classes = num_classes
         self.weights = None
+        self.scale = scale
 
     def softmax(self, z):
         exp_z = np.exp(z - np.max(z, axis=1, keepdims=True))
