@@ -26,5 +26,7 @@ class MultiClassClassifier:
 
     def predict(self, X):
         X_bias = np.c_[np.ones((X.shape[0], 1)), X]
+        if self.scale:
+            X_bias = (X_bias - self.mean) / self.std
         logits = np.dot(X_bias, self.weights)
         return np.argmax(logits, axis=1)
