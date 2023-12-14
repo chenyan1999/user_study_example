@@ -1,6 +1,6 @@
 import numpy as np
 
-def classify_commit(dataset):
+def classify(dataset, idx):
     dic = {}
     for sample in dataset:
         commit_id = sample['commit_url'].split('/')[-1]
