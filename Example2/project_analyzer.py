@@ -1,5 +1,12 @@
 import numpy as np
-from commit_analyzer import classify
 
 def classify_project(dataset):
-    return classify(dataset, -3)
+    dic = {}
+    for sample in dataset:
+        project_name = sample['commit_url'].split('/')[-3]
+        if project_name not in dic:
+            dic[project_name] = 1
+        else:
+            dic[project_name] += 1
+    ave = np.mean(list(dic.values()))
+    return ave
