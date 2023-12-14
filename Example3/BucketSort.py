@@ -7,7 +7,7 @@ def bucket_sort(arr):
     bucket_range = (max_val - min_val) / len(arr)
 
     # Create empty buckets
-    buckets = [[] for _ in range(len(arr))]
+    buckets = [[] for _ in range(arr)]
 
     # Distribute elements into buckets
     for num in arr:
