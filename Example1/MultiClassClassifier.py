@@ -1,7 +1,7 @@
 import numpy as np
 
 class MultiClassClassifier:
-    def __init__(self, num_classes):
+    def __init__(self, num_classes, scale):
         self.num_classes = num_classes
         self.weights = None
 
