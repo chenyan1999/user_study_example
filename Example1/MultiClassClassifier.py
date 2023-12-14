@@ -12,6 +12,10 @@ class MultiClassClassifier:
 
     def train(self, X, y, learning_rate=0.01, epochs=100):
         X = np.c_[np.ones((X.shape[0], 1)), X]  # Add bias term
+        if self.scale:
+            self.mean = np.mean(X, axis=0)
+            self.std = np.std(X, axis=0) + 1e-8
+            X = (X - self.mean) / self.std # Scale normalize X
         self.weights = np.zeros((X.shape[1], self.num_classes))
 
         for _ in range(epochs):
